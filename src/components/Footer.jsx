@@ -4,7 +4,7 @@ import { Facebook, Instagram, Twitter, Youtube, Linkedin } from 'lucide-react'
 
 const Footer = () => {
   return (
-    <div className='bg-zinc-950 h-auto w-full mt-8'>
+    <div className='bg-zinc-950 h-82 w-full mt-8 mb-0 pb-0'>
       <div className='flex md:flex-row flex-col justify-around'>
         <div className='text-white flex flex-col mt-7'>
           <h1 className='mb-3 font-bold text-3xl opacity-90'>YogUrja Wellness</h1>
@@ -45,9 +45,9 @@ const Footer = () => {
         </div>
       </div>
       <div className='w-full h-[1px] bg-gray-700'></div>
-      <div className='mt-7 flex justify-around'>
+      <div className='mt-7 pb-5 flex justify-around'>
         <h1 className='text-white opacity-90'>Yogurja © 2025 All rights reserved. Designed By Social Wits.</h1>
-        <div className='flex md:flex-row flex-col mb-5 gap-3 opacity-90'>
+        <div className='flex md:flex-row flex-col gap-3 opacity-90'>
           <img className='h-10 w-10' src='https://www.freepnglogos.com/uploads/visa-inc-png-18.png' />
           <img className='h-10 w-10' src='https://tse3.mm.bing.net/th/id/OIP.2GBsE98iH4hZsEB-8DZqNQHaHa?pid=Api&h=220&P=0' />
           <img className='h-10 w-10' src='https://tse1.mm.bing.net/th/id/OIP.iPcVDe87mw9ipTIkRCb8FAHaDQ?pid=Api&h=220&P=0' />
@@ -56,7 +56,6 @@ const Footer = () => {
           <img className='h-10 w-10' src='https://storage.googleapis.com/gweb-uniblog-publish-prod/images/GooglePay_Lockup.max-1000x1000.png' />
         </div>
       </div>
-
     </div>
   )
 }
