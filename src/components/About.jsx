@@ -18,7 +18,7 @@ const About = () => {
       </div>
       <div className='flex flex-col items-center'>
         <h1 className='font-serif font-semibold md:text-2xl opacity-90'>AMONG OUR SERVICES ARE:</h1>
-        <div className=' flex md:flex-row flex-col md:gap-10 font-medium text-green-300 transition-all duration-300 px-2 py-2'>
+        <div className=' flex md:flex-row flex-col md:gap-10 font-medium text-[#569681] transition-all duration-300 px-2 py-2'>
           <button className='focus:border-2'>Back Pain Relief:</button>
           <button className='focus:border-2'>Weight Loss Programs:</button>
           <button className='focus:border-2'>Heart Health:</button>
