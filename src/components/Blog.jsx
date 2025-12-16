@@ -1,7 +1,17 @@
-import React from 'react'
+import React, { useState } from 'react'
 import Card from './Card'
 import blogPosts from '../blogPosts'
+import Footer from './Footer'
+import {Link,Outlet, useNavigate} from 'react-router-dom'
+import { ListChevronsDownUp, ListChevronsUpDown } from 'lucide-react'
 const Blog = () => {
+  const navigate=useNavigate();
+  const handle=()=>{
+    navigate('/Blog/Blogpage')
+  }
+  const back=()=>{
+    navigate(-1);
+  }
   return (
     <div className='flex flex-col'>
 <div className='bg-black text-white flex flex-col flex-wrap justify-center items-center h-40 md:h-50 font-semibold font-serif'>
@@ -17,6 +27,13 @@ const Blog = () => {
         />
       ))}
       </div>
+      <div className='flex justify-between m-5'><button onClick={handle}><ListChevronsUpDown/></button>
+      <button onClick={back}><ListChevronsDownUp/></button>
+      </div>
+      <Outlet/>
+        <Footer/>
+
+
     </div>
   )
 }

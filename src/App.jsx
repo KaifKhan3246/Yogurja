@@ -8,10 +8,10 @@ import Contact from './components/Contact'
 import Services from './components/Services'
 import Gallery from './components/Gallery'
 import Blog from './components/Blog'
-import Footer from './components/Footer'
 import Privacy from './components/Privacy'
 import Cancel from './components/Cancel'
 import Terms from './components/Terms'
+import Blogpage from './components/Blogpage'
 
 const App = () => {
   return (
@@ -24,7 +24,9 @@ const App = () => {
         <Route path='/Contact' element={<Contact/>}/>
         <Route path='/Services' element={<Services/>}/>
         <Route path='/Gallery' element={<Gallery/>}/>
-        <Route path='/Blog' element={<Blog/>}/>
+        <Route path='/Blog' element={<Blog/>}>
+        <Route path='Blogpage' element={<Blogpage/>}/>
+        </Route>
         <Route path='/Privacy' element={<Privacy/>}/>
         <Route path='/Cancel' element={<Cancel/>}/>
         <Route path='/Terms' element={<Terms/>}/>
