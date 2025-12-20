@@ -5,9 +5,9 @@ import Footer from './Footer'
 const About = () => {
   return (
     <div className='h-full'>
-      <div className='bg-black text-white flex flex-col flex-wrap justify-center items-center h-40 md:h-50 font-semibold font-serif'>
+      <div className='bg-zinc-950 text-white flex flex-col flex-wrap justify-center items-center h-40 md:h-50 font-semibold font-serif'>
         <h1 className='md:text-4xl text-2xl'>ABOUT US</h1>
-        <span className='text-sm md:text-lg'>Home/About us</span>
+        <span className='text-sm font-serif'><Link className='text-sm text-orange-500' to='/'>Home</Link>/About us</span>
       </div>
       <div className=' md:flex md:m-10 m-5'>
         <img className='h-auto rounded-full' src='https://tse2.mm.bing.net/th/id/OIP.3wk84DjvlA0Yf4XQzniaMwHaE7?pid=Api&h=220&P=0' alt='pic' />
@@ -52,7 +52,7 @@ const About = () => {
           <div className='flex items-center justify-center mb-5'>
             <h1 className='font-bold text-2xl font-serif'>CORPORATE WELLNESS ALLIES</h1>
           </div>
-          <div className='flex md:flex-row flex-col justify-around'>
+          <div className='flex flex-wrap justify-around'>
             <img className='h-25 w-25' src='http://1.bp.blogspot.com/-XtT1yDJWsUY/TgtpcfBSM5I/AAAAAAAAYw8/vyTSRRnqAHY/s1600/Maersk_logo11.JPG' />
             <img className='h-25 w-25' src='https://tse4.mm.bing.net/th/id/OIP.Luk6xEcixI7fYowaFaTUkQAAAA?pid=Api&h=220&P=0' />
             <img className='h-25 w-25' src='https://tse4.mm.bing.net/th/id/OIP.ZSW9amabL4k-lfcEhK81qQHaFj?pid=Api&h=220&P=0' />

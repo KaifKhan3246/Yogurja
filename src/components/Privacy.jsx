@@ -4,7 +4,7 @@ import Footer from './Footer'
 const Privacy = () => {
   return (
     <div className='h-full'>
-      <div className='bg-black text-white flex flex-col flex-wrap justify-center items-center h-40 md:h-50 font-semibold font-serif'>
+      <div className='bg-zinc-950 text-white flex flex-col flex-wrap justify-center items-center h-40 md:h-50 font-semibold font-serif'>
         <h1 className='md:text-6xl text-4xl'>Privacy Policy</h1>
         <span className='text-sm md:text-lg'>Home / Privacy Policy</span>
       </div>
