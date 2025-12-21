@@ -10,11 +10,11 @@ const Header = () => {
 <span className='text-white font-medium'>yogurjawellness@gmail.com</span>
 </div>
 <div className='flex gap-0.5 md:gap-1.5'>
-    <Facebook className='text-white'/>
-    <Youtube className='text-white'/>
-    <Instagram className='text-white'/>
-    <Twitter className='text-white'/>
-    <Linkedin className='text-white'/>
+   <a href='https://www.facebook.com/yogurja/' target='_blank'><Facebook className='text-white'/></a>
+    <a href='https://www.youtube.com/@yogurja_wellness_center' target='_blank'><Youtube className='text-white'/></a>
+    <a href='https://www.instagram.com/yogurjawellness/' target='_blank'><Instagram className='text-white'/></a>
+    <a href='https://x.com/Yogurjawellness' target='_blank'><Twitter className='text-white'/></a>
+    <a href='in.linkedin.com/company/yogurja-health-wellness' target='_blank'><Linkedin className='text-white'/></a>
 
 </div>
       </div>

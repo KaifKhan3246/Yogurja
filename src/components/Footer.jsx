@@ -11,11 +11,11 @@ const Footer = () => {
           <span className='mb-5 opacity-90'>"At Yogurja Wellness & Panchkarma Center"</span>
           <h1 className='mb-3 opacity-90'>Follow Us</h1>
           <div className='flex justify-between mb-5 opacity-90'>
-            <button><Facebook /></button>
-            <button><Instagram /></button>
-            <button><Linkedin /></button>
-            <button><Twitter /></button>
-            <button><Youtube /></button>
+            <a href='https://www.facebook.com/yogurja/' target='_blank'><Facebook className='text-white'/></a>
+                <a href='https://www.youtube.com/@yogurja_wellness_center' target='_blank'><Youtube className='text-white'/></a>
+                <a href='https://www.instagram.com/yogurjawellness/' target='_blank'><Instagram className='text-white'/></a>
+                <a href='https://x.com/Yogurjawellness' target='_blank'><Twitter className='text-white'/></a>
+                <a href='in.linkedin.com/company/yogurja-health-wellness' target='_blank'><Linkedin className='text-white'/></a>
           </div>
         </div>
         <div className='text-white mt-7'>

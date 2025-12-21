@@ -1,8 +1,12 @@
-import React from 'react'
+import React, { useState } from 'react'
 import CountUp from 'react-countup'
 import { Link } from 'react-router-dom'
 import Footer from './Footer'
 const About = () => {
+  const [back,setBack]=useState(false);
+  const pain=()=>{
+    setBack(!back);
+  }
   return (
     <div className='h-full'>
       <div className='bg-zinc-950 text-white flex flex-col flex-wrap justify-center items-center h-40 md:h-50 font-semibold font-serif'>
@@ -19,7 +23,10 @@ const About = () => {
       <div className='flex flex-col items-center'>
         <h1 className='font-serif font-semibold md:text-2xl opacity-90'>AMONG OUR SERVICES ARE:</h1>
         <div className=' flex md:flex-row flex-col md:gap-10 font-medium text-[#569681] transition-all duration-300 px-2 py-2'>
-          <button className='focus:border-2'>Back Pain Relief:</button>
+          <div className='relative'>
+          <button onClick={pain} className='focus:border-2'>Back Pain Relief:</button>
+          </div>
+          {back&&(<div className='hidden md:flex md:flex-col absolute mt-7.5 left-55 rounded-md w-auto'><h1 className='bg-orange-100  border-2 backdrop-blur-lg p-1 '>With our specialised programs, get relief from persistent back pain.</h1></div>)}
           <button className='focus:border-2'>Weight Loss Programs:</button>
           <button className='focus:border-2'>Heart Health:</button>
           <button className='focus:border-2'>Joint Pain Therapy:</button>
