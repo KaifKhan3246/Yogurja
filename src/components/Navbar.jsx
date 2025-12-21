@@ -27,11 +27,7 @@ const Navbar = () => {
         <Link className='bg-orange-500 w-fit h-fit px-4 py-2 opacity-80 text-white font-semibold' to='/Contact'>Book Appointment</Link>
         </div>
       </div>
-      <div className='flex justify-center items-center'>
-      <div className={servicer?"hidden":" h-40 w-1/20 mr-47 bg-amber-300"}><h1>hello</h1></div>
-      </div>
       <div>
-
 <button className='md:hidden cursor-grab' onClick={handle}>{open?<X />:<Menu />}</button>
 <div className={`bg-white rounded-lg absolute top-16 left-5 text-center text-xl transition-all-duration-300 md:hidden ${open?"block":"hidden"}`}>
   <div className='flex gap-1.5 text-sm font-medium transition-all duration-300'>
