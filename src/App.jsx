@@ -12,6 +12,7 @@ import Privacy from './components/Privacy'
 import Cancel from './components/Cancel'
 import Terms from './components/Terms'
 import Blogpage from './components/Blogpage'
+import Admin from './components/Admin'
 
 const App = () => {
   return (
@@ -30,6 +31,7 @@ const App = () => {
         <Route path='/Privacy' element={<Privacy/>}/>
         <Route path='/Cancel' element={<Cancel/>}/>
         <Route path='/Terms' element={<Terms/>}/>
+        <Route path='/Admin' element={<Admin/>}/>
       </Routes>
     </div>
   )
