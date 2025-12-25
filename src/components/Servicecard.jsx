@@ -1,6 +1,6 @@
 import React from 'react'
 
-const Servicecard = ({title,des}) => {
+const Servicecard = ({ title, des, link = '#' }) => {
   return (
     <div className="w-full md:w-1/6">
   <div className="h-full rounded-xl shadow-[inset_0_12px_40px_rgba(86,150,129,0.9)] shadow-[#569681] transition-all duration-300">
@@ -20,15 +20,13 @@ const Servicecard = ({title,des}) => {
           {des}
         </p>
         <a
-          href="https://en.wikipedia.org/wiki/Ayurveda"
+          href={link}
           target="_blank"
-          className="mt-4 mb-3 bg-orange-500 text-white px-5 py-2 rounded-full
-          shadow-md hover:bg-orange-600 active:scale-95 transition-all duration-300"
+          className="mt-4 mb-3 bg-orange-500 text-white px-5 py-2 rounded-full shadow-md hover:bg-orange-600 active:scale-95 transition-all duration-300"
         >
           Learn More
         </a>
       </div>
-
     </div>
   </div>
 </div>

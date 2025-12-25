@@ -13,12 +13,12 @@ const Services = () => {
       </div>
       <div className=' flex justify-center items-center font-semibold md:text-5xl text-2xl font-serif mt-10'>
 <h1>OUR SERVICES</h1>
-      </div><div className=' flex md:flex-row flex-wrap m-10 gap-4'>
+      </div><div className='flex md:flex-row flex-wrap m-10 gap-12'>
         {Servicedata.map((service)=>(
           <Servicecard key={service.id}
                     title={service.title}
                     des={service.description}
-
+                    link={service.Link}
           />
         ))}
         </div>
