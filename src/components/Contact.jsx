@@ -33,7 +33,7 @@ const Contact = () => {
     }
 
     try {
-      await axios.post("http://localhost:5000/api/contact", data);
+      await axios.post("http://localhost:5001/api/contact", data);
       alert("Message Sent Successfully");
 
       name.current.value = "";
@@ -42,6 +42,7 @@ const Contact = () => {
       company.current.value = "";
       area.current.value = "";
     } catch (error) {
+      console.error("AXIOS ERROR:", error.response || error.message);
       alert("Something went wrong");
     }
   };

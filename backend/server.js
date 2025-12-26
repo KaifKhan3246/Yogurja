@@ -2,20 +2,24 @@ const express = require("express");
 const mongoose = require("mongoose");
 const cors = require("cors");
 
+const contactRoute = require("./routes/contactRoute");
+
 const app = express();
 
-// Middlewares
+// ✅ Middleware (VERY IMPORTANT)
 app.use(cors());
 app.use(express.json());
 
-// MongoDB Connection
-mongoose.connect("mongodb+srv://ayandavian07_db_user:lg6toUw3yEnSS6Xu@cluster0.7sgr9dp.mongodb.net/contactDB")
-    .then(() => console.log("MongoDB Connected"))
-    .catch(err => console.log(err));
+// ✅ Routes
+app.use("/api/contact", contactRoute);
 
-// Routes
-app.use("/api/contact", require("./routes/contactRoute"));
+// ✅ MongoDB connection
+mongoose
+  .connect("mongodb://127.0.0.1:27017/contactDB")
+  .then(() => console.log("✅ MongoDB Connected"))
+  .catch((err) => console.error("❌ MongoDB Error:", err));
 
-app.listen(5000, () => {
-    console.log("Server running on port 5000");
+const PORT = 5001;
+app.listen(PORT, () => {
+  console.log(`🚀 Server running on port ${PORT}`);
 });

@@ -7,7 +7,7 @@ const Admin = () => {
 
   useEffect(() => {
     axios
-      .get("http://localhost:5000/api/contact")
+      .get("http://localhost:5001/api/contact")
       .then((res) => setMessages(res.data))
       .catch((err) => console.log(err));
   }, []);

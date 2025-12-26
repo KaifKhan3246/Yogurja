@@ -2,32 +2,29 @@ const express = require("express");
 const router = express.Router();
 const Contact = require("../models/Contact");
 
-// SAVE MESSAGE (already used)
-router.post("/", async(req, res) => {
-    try {
-        const newContact = new Contact({
-            name: req.body.name,
-            email: req.body.email,
-            number: req.body.number,
-            company: req.body.company,
-            message: req.body.message,
-        });
+// ✅ POST: Save contact form
+router.post("/", async (req, res) => {
+  try {
+    console.log("📩 Incoming Data:", req.body);
 
-        await newContact.save();
-        res.status(201).json({ success: true });
-    } catch (error) {
-        res.status(500).json({ success: false });
-    }
+    const contact = new Contact(req.body);
+    await contact.save();
+
+    return res.json({ success: true });
+  } catch (error) {
+    console.error("❌ Contact Save Error:", error);
+    return res.json({ success: false });
+  }
 });
 
-// 👉 GET ALL MESSAGES (ADMIN)
-router.get("/", async(req, res) => {
-    try {
-        const messages = await Contact.find().sort({ date: -1 });
-        res.json(messages);
-    } catch (error) {
-        res.status(500).json({ msg: "Error" });
-    }
+// ✅ GET: Fetch all contacts
+router.get("/", async (req, res) => {
+  try {
+    const contacts = await Contact.find().sort({ date: -1 });
+    res.json(contacts);
+  } catch (error) {
+    res.status(500).json({ message: "Failed to fetch contacts" });
+  }
 });
 
 module.exports = router;
