@@ -6,14 +6,14 @@ const contactRoute = require("./routes/contactRoute");
 
 const app = express();
 
-// ✅ Middleware (VERY IMPORTANT)
+// Middleware 
 app.use(cors());
 app.use(express.json());
 
-// ✅ Routes
+//  Routes
 app.use("/api/contact", contactRoute);
 
-// ✅ MongoDB connection
+//  MongoDB connection
 mongoose
   .connect("mongodb://127.0.0.1:27017/contactDB")
   .then(() => console.log("✅ MongoDB Connected"))
