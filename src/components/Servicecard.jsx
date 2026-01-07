@@ -1,6 +1,6 @@
 import React from 'react'
 
-const Servicecard = ({ title, des, link = '#' }) => {
+const Servicecard = ({ title,img, des, link = '#' }) => {
   return (
     <div className="w-full md:w-1/6">
   <div className="h-full rounded-xl shadow-[inset_0_12px_40px_rgba(86,150,129,0.9)] shadow-[#569681] transition-all duration-300">
@@ -8,7 +8,7 @@ const Servicecard = ({ title, des, link = '#' }) => {
     <div className="flex flex-col h-full rounded-xl object-cover">
       <img
         className="h-1/2 m-2 object-cover hover:scale-101 rounded-lg transition-transform duration-300"
-        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTEc0FLAGIsnOpZofg6a-d5FqLfjhsAc3tMXg&s"
+        src={img}
         alt={title}
       />
       <div className="flex flex-col items-center text-center p-4">

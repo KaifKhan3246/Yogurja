@@ -13,6 +13,9 @@ import Cancel from './components/Cancel'
 import Terms from './components/Terms'
 import Blogpage from './components/Blogpage'
 import Admin from './components/Admin'
+import Service1 from './Service1'
+import Service2 from './Service2'
+import Service3 from './Service3'
 
 const App = () => {
   return (
@@ -32,6 +35,9 @@ const App = () => {
         <Route path='/Cancel' element={<Cancel/>}/>
         <Route path='/Terms' element={<Terms/>}/>
         <Route path='/Admin' element={<Admin/>}/>
+        <Route path='/Service1' element={<Service1/>}/>
+        <Route path='/Service2' element={<Service2/>}/>
+        <Route path='/Service3' element={<Service3/>}/>
       </Routes>
     </div>
   )

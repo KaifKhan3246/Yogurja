@@ -37,15 +37,15 @@ const Navbar = () => {
 
           {isServicesOpen && (
   <div className="absolute top-full left-0 mt-0.5 w-20 bg-white/50 shadow-sm rounded-md">
-    <ul className="p-0.5">
+    <ul className="p-0.5 flex flex-col justify-center items-center">
       <li className="px-1 py-1 hover:bg-white/50 rounded cursor-pointer">
-        <Link className='text-sm hover:underline hover:opacity-90 decoration-1 decoration-green-300' to="/Services/service1">Service 1</Link>
+        <Link className='text-[11px] hover:underline hover:opacity-90 decoration-1 decoration-green-300' to="/Service1">Ayurveda</Link>
       </li>
       <li className="px-1 py-1 hover:bg-white/50 rounded cursor-pointer">
-        <Link className='text-sm hover:underline hover:opacity-90 decoration-1 decoration-green-300' to="/Services/service2">Service 2</Link>
+        <Link className='text-[11px] hover:underline hover:opacity-90 decoration-1 decoration-green-300' to="/Service2">Physiotherapy</Link>
       </li>
       <li className="px-1 py-1 hover:bg-white/50 rounded cursor-pointer">
-        <Link className='text-sm hover:underline hover:opacity-90 decoration-1 decoration-green-300' to="/Services/service3">Service 3</Link>
+        <Link className='text-[11px] hover:underline hover:opacity-90 decoration-1 decoration-green-300' to="/Service3">Rehabilitation</Link>
       </li>
     </ul>
   </div>
