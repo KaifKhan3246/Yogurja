@@ -11,7 +11,7 @@ const Cancel = () => {
       <div className='ml-25 mt-15 mb-20'>
         <div className='flex flex-col'>
           <div>
-            <h2 className='font-medium text-1xl mb-3 opacity-55'>REFUND/CANCELLATION POLICY</h2>
+            <h2 className='font-medium text-1xl mb-3 opacity-70'>REFUND/CANCELLATION POLICY</h2>
             <p className='opacity-50 text-sm'>We do not provide any cancellations or refunds.</p>
           </div>
         </div>
