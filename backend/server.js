@@ -15,11 +15,11 @@ app.use("/api/contact", contactRoute);
 
 //  MongoDB connection
 mongoose
-  .connect("mongodb://127.0.0.1:27017/contactDB")
-  .then(() => console.log("✅ MongoDB Connected"))
-  .catch((err) => console.error("❌ MongoDB Error:", err));
+    .connect("mongodb+srv://ayandavian07_db_user:Ayan2721@cluster0.7sgr9dp.mongodb.net/contactDB")
+    .then(() => console.log("✅ MongoDB Connected"))
+    .catch((err) => console.error("❌ MongoDB Error:", err));
 
 const PORT = 5001;
 app.listen(PORT, () => {
-  console.log(`🚀 Server running on port ${PORT}`);
+    console.log(`🚀 Server running on port ${PORT}`);
 });
